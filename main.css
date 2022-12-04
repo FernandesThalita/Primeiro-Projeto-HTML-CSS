@@ -1,0 +1,598 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+:root {
+    --preto: #312C2C;
+    --azul: #3C9FBE;
+    --branco: #fff;
+}
+
+body {
+    background-color: var(--preto);
+
+}
+
+/* HEADER E MENU CSS */
+.menu-principal {
+    padding: 0 4%;
+    width: 100%;
+    background-color: var(--preto);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.icons-principais {
+    width: 20%;
+}
+
+.icons-principais ul li {
+    padding: 0 5%;
+    display: inline-block;
+}
+
+.icons-principais i {
+    color: var(--branco);
+    transition: 0.2s;
+}
+
+.icons-principais i:hover {
+    color: var(--branco);
+    text-shadow: 0 0 20px #e9ecee;
+}
+
+.logo {
+    padding: 15px;
+    width: 80%;
+    font-size: 2.0rem;
+    color: var(--branco);
+    text-shadow: 0 0 20px #05daff;
+
+}
+
+.menu-bar {
+    padding: 0 25px;
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: var(--azul);
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0;
+    flex-wrap: wrap;
+    font-size: 1.0rem;
+}
+
+.menu-bar ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-bar ul li {
+    padding: 0 13px;
+    margin: 5px;
+}
+
+.menu-bar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--branco);
+    margin: 5px;
+    font-weight: 800px;
+    padding: 15px;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+
+}
+
+.menu-bar ul li a.active,
+.menu-bar ul li a:hover {
+    background-color: var(--preto);
+}
+
+.menu-bar .menu-btn {
+    color: var(--branco);
+    cursor: pointer;
+    display: none;
+}
+
+/* FIM HEADER CSS */
+
+.banner-produtos {
+    display: flex;
+    justify-content: center;
+    background-color:rgb(30, 30, 30);
+
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(5, 3, 25);
+
+}
+
+
+
+
+
+.slide {
+    width: 1500px;
+    height: 570px;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: all 0.4s;
+}
+
+.slides {
+    width: 5120px;
+}
+
+.imagens img {
+    width: 1500px;
+    height: 576px;
+}
+
+#atual {
+    margin-left: 0;
+    transition: all 2s;
+}
+
+.btn {
+    position: absolute;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+}
+
+
+/* VITRINE -TITULOS */
+.vitrine {
+    margin-left: 65px;
+    width: 100%;
+    display: flex;
+    font-size: 1.5rem;
+}
+
+#vitrine-video-games {
+    margin-bottom: 33px;
+}
+
+.vitrine h2 {
+    color: var(--branco);
+}
+
+/* FIM VITRINE -TITULOS */
+
+
+/* CSS FOOTER */
+
+.container-footer {
+   
+    max-width: 1170px;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.coluna-footer {
+    margin-top: 18px;
+    width: 33%;
+    padding: 0 95px;
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+    padding: 80px 0;
+    background-color: var(--azul);
+}
+
+.logo-footer {
+    display: flex;
+    margin-left: 90px;
+}
+
+.logo-footer .logo {
+    font-size: 1.4rem;
+    color: var(--branco);
+    background: var(--preto);
+    width: 100%;
+    height: 40px;
+}
+
+.coluna-footer ul li {
+    color: rgb(211, 207, 207);
+    padding: 6px;
+    transition: 0.3s;
+}
+
+.coluna-footer ul li:hover {
+    cursor: pointer;
+    color: white;
+    margin-left: 14px;
+
+}
+
+.coluna-footer h4 {
+    width: 35%;
+    border-bottom: 1px solid #fff;
+    font-weight: 550;
+    font-size: 18px;
+    color: #fcfcfc;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+.coluna-footer h4:hover {
+    cursor: pointer;
+    color: rgb(149, 210, 221);
+    margin-left: 14px;
+    border-bottom: 1px solid rgb(121, 217, 235);
+}
+
+.coluna-footer a {
+    color: white;
+}
+
+.coluna-footer .redes-socias-footer a i {
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    background-color: var(--preto);
+    transition: all 0.5 ease;
+}
+
+.coluna-footer .redes-socias-footer a i:hover {
+    background-color: white;
+    color: var(--preto);
+}
+
+/* FIM  FOOTER */
+
+/* CSS About-us*/
+.about-us {
+    background: rgb(68, 67, 67);
+    margin: 4%;
+    border-radius: 40px;
+    filter: drop-shadow(0 3px 5px rgba(0, 0, 0, .7));
+}
+
+.lights {
+    color: #05daff;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+}
+
+.contato {
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background-size: cover;
+}
+
+.contato .conteudo {
+
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.contato .conteudo h2 {
+    font-size: 46px;
+    font-weight: 505;
+    margin-bottom: 15px;
+}
+
+.contato .conteudo p {
+    font-weight: 300;
+}
+
+.container-about-us {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.container-about-us .info-contato {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+
+.box-about-us h3 {
+    color: var(--azul);
+}
+
+.contato .conteudo h2 {
+    color: var(--azul);
+}
+
+.container-about-us .info-contato .box-about-us {
+    position: relative;
+    padding: 20px 0;
+    display: flex;
+}
+
+.container-about-us .info-contato .box-about-us .icon {
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    background-color: var(--branco);
+    color: #3C9FBE;
+}
+
+.form-contato {
+    filter: drop-shadow(0 3px 5px rgba(0, 0, 0, .7));
+    width: 40%;
+    padding: 30px;
+    border-radius: 30px;
+    background: var(--azul);
+}
+
+.form-contato h2 {
+    font-size: 40px;
+    font-weight: 500;
+    filter: drop-shadow(0 3px 5px rgba(0, 0, 0, .7));
+
+}
+
+.form-contato .box-input {
+    filter: drop-shadow(0 3px 5px rgba(0, 0, 0, .7));
+    position: relative;
+    width: 100%;
+    margin-top: 14px;
+
+}
+
+.form-contato .box-input input {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 20px;
+    margin: 10px 0;
+
+}
+
+.form-contato .box-input input,
+.form-contato .box-input textarea {
+    width: 100%;
+    padding: 5px 0;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    margin: 10px 0;
+
+    resize: none;
+}
+
+.form-contato .box-input span {
+    color: rgb(163, 161, 161);
+    position: absolute;
+    left: 5px;
+    padding: 5px 0;
+    margin: 10px 0;
+
+
+}
+
+.form-contato .box-input input[type="submit"] {
+    cursor: pointer;
+    padding: 10px;
+    width: 100px;
+    color: white;
+    background-color: rgb(65, 140, 175);
+}
+
+/* FIM CSS About-us*/
+
+
+/*CSS DE PRODUTOS*/
+
+
+.box-container {
+    margin-left: 55px;
+    margin-right: 55px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.vitrine {
+
+    border-radius: 40px;
+    width: 54%;
+    margin-top: 50px;
+    justify-content: center;
+    padding: 5px;
+    background-color: var(--azul);
+    color: #fff;
+    border: 1px solid rgba(0, 0, 0, .3);
+    filter: drop-shadow(0 3px 5px rgba(0, 0, 0, .7));
+}
+
+.vitrine i {
+    font-size: 2.0rem;
+    padding: 6px;
+}
+
+.box {
+    filter: drop-shadow(0 3px 5px rgba(0, 0, 0, .7));
+    flex: 1 1 300px;
+    background-color: rgb(212, 212, 212);
+    border: 1px solid rgba(0, 0, 0, .3);
+    position: relative;
+    overflow: hidden;
+    margin: 20px;
+}
+
+.box .imagem {
+    padding: 10px;
+
+    text-align: center;
+}
+
+.box .imagem img {
+    height: 200px;
+    width: 250px;
+    object-fit: cover;
+    filter: drop-shadow(0 3px 5px rgba(0, 0, 0, .7));
+}
+
+.box .informacoes .titulo {
+    padding: 10px;
+    color: #666;
+    font-size: 20px;
+}
+
+.box .informacoes .subInformacoes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 10px;
+    border-top: 1px solid rgba(0, 0, 0, .3);
+}
+
+.box .informacoes .subInformacoes .preco {
+    font-weight: bold;
+    color: #4aa3df;
+    font-size: 30px;
+}
+
+.box .informacoes .subInformacoes .estrelas i {
+    color: rgb(214, 140, 1);
+    font-size: 17px;
+}
+
+.box .sobreposicao {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 223px;
+    width: 100%;
+    background: rgba(0, 0, 0, .3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: none;
+    transform: scale(0);
+}
+
+.box:hover .sobreposicao {
+    transform: scale(1);
+}
+
+.box .sobreposicao a {
+    color: #666;
+    background: #fff;
+    margin: 10px;
+    padding: 13px 15px;
+    font-size: 25px;
+    transform: translateY(-150px);
+    transition-property: transform;
+
+}
+
+.box:hover .sobreposicao a {
+    transform: translateY(0px);
+
+}
+
+.box .sobreposicao a:hover {
+    color: var(--azul);
+}
+
+/*fim CSS DE PRODUTOS*/
+
+/* CSS RESPONSIVE*/
+
+@media screen and (max-width: 941px) {
+
+    .slide {
+        display: none;
+    }
+
+    .banner {
+        display: none;
+    }
+
+    .icons-principais {
+        width: 45%;
+    }
+
+    .logo {
+        padding: 5px;
+        width: 10%;
+        font-size: 1.0rem;
+    }
+
+    .menu-bar .menu-btn {
+        display: block;
+    }
+
+    .menu-bar ul {
+        position: fixed;
+        width: 60%;
+        top: 0;
+        left: 0;
+        transform: translateX(-100%);
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        transition: 0.3s ease-in;
+    }
+}
+
+@media screen and (max-width: 990px) {
+    .contato {
+        padding: 50px;
+    }
+
+    .container-about-us {
+        flex-direction: column;
+    }
+
+    .container-about-us .info-contato {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 1629px) {
+    .banner-produtos {
+        display: none;
+    }
+}
